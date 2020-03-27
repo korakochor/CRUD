@@ -1,11 +1,11 @@
 {
-  "name": "crud",
+  "name": "CRUD",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "dev": "nodemon",
+    "test": "(dropdb --if-exists test-cjs-web-store && createdb test-cjs-web-store) && NODE_ENV=test mocha"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,16 @@
   },
   "homepage": "https://github.com/korakochor/CRUD#readme",
   "dependencies": {
+    "debug": "^4.1.1",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "gitignore": "^0.6.0",
     "graphiql": "^0.17.5",
     "graphql": "^14.6.0",
     "knex": "^0.20.13",
-    "nodemon": "^2.0.2",
     "pg": "^7.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }

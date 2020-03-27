@@ -7,7 +7,7 @@ module.exports = {
   },
   test: {
     client: 'pg',
-    connection: 'postgres://localhost/koradata'
+    connection: 'postgres://localhost/test-koradata'
   },
   production: {
     client: 'pg',
