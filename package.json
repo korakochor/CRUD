@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "crud",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,10 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/korakochor/CRUD.git",
+    "url": "git+https://github.com/korakochor/CRUD.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/korakochor/CRUD/issues"
+  },
+  "homepage": "https://github.com/korakochor/CRUD#readme",
   "dependencies": {
     "express": "^4.17.1",
     "gitignore": "^0.6.0"
