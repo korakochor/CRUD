@@ -16,4 +16,4 @@ module.exports = {
     delete(id) {
         return knex('breed').where('id', id).del();
     }
-}
+};

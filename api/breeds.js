@@ -10,10 +10,10 @@ function isValidId(req, res, next) {
 }
 
 function validBreed(breed) {
-    const hasName= typeof breed.name == 'string' && breed.name.trim() != '';
-    const hasGroup = typeof breed.group == 'string' && breed.group.trim() != '';
-    const hasTemperament = typeof breed.temperament == 'string' && breed.temperament.trim() != '';
-    const hasLife_expectancy = typeof breed.life_expectancy == 'string' && breed.life_expectancy.trim() != '';
+    const hasName= typeof breed.name == 'string';
+    const hasGroup = typeof breed.group == 'string';
+    const hasTemperament = typeof breed.temperament == 'string';
+    const hasLife_expectancy = typeof breed.life_expectancy == 'string';
     return hasName && hasTemperament && hasGroup && hasLife_expectancy;
 }
 

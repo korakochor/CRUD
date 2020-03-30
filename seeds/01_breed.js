@@ -1,4 +1,3 @@
-
 const breeds = require('../breeds');
 
 exports.seed = function(knex, Promise) {
